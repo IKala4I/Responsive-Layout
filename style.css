@@ -38,7 +38,7 @@ body {
 }
 
 .main {
-    padding: 1rem 0;
+    padding: 1rem 0 0;
 }
 
 .image-section {
@@ -67,7 +67,7 @@ body {
     display: grid;
     grid-template-columns:repeat(7, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    padding: 1rem 0;
+    padding: 1rem 0 0.5rem;
     row-gap: 0.25rem;
     column-gap: 0.25rem;
 }
@@ -109,6 +109,10 @@ body {
 }
 
 @media (max-width: 1024px) and (min-width: 360px) {
+    .header__item:last-of-type {
+        flex-grow: 7;
+    }
+
     .image-section__wrapper {
         flex-direction: column;
     }
@@ -127,6 +131,7 @@ body {
         grid-template-rows: repeat(6, 1fr);
         row-gap: 0.25rem;
         column-gap: 0.5rem;
+        padding-bottom:1rem;
     }
 
     .article__section--3 {
