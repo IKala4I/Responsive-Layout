@@ -19,6 +19,7 @@ html {
     color: grey;
     text-align: center;
     vertical-align: center;
+    padding: 5px 0;
 }
 
 .header__item:first-of-type {
