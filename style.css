@@ -9,6 +9,10 @@ html {
     margin: 1rem auto;
 }
 
+body{
+    margin:0 1rem;
+}
+
 .header__section {
     display: flex;
     column-gap: 15px;
@@ -26,6 +30,45 @@ html {
     flex-grow: 1;
 }
 
-.header__item:last-of-type{
+.header__item:last-of-type {
     flex-grow: 8;
+}
+
+.main {
+    padding: 1rem 0;
+}
+
+.image-section {
+    border: 1px solid grey;
+    padding: 1.25rem 0.75rem 0.75rem;
+    display: flex;
+    column-gap: 1rem;
+}
+
+.image-section__wrapper {
+    flex-grow: 1;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.image-section__picture {
+    width:calc(50% - 0.25rem);
+}
+
+.image-section__image{
+    width:100%;
+}
+
+@media (max-width: 1024px) and (min-width: 360px) {
+    .image-section__wrapper {
+        flex-direction: column;
+    }
+    .image-section__picture{
+        width:100%;
+    }
+    .image-section{
+        column-gap: 1.5rem;
+        padding-top: 2.5rem;
+    }
 }
